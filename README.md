@@ -17,3 +17,5 @@ In this application you can
 - View the show page of an exhibit
 - Modify the animal species & quantity within an exhibit
 - "Close"/delete an exhibit
+
+## I hope you enjoy!
