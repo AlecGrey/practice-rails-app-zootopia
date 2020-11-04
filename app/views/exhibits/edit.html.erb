@@ -1,0 +1,17 @@
+<h1>Modify Exhibit</h1>
+
+<%= form_for @exhibit do |f| %>
+    <% @exhibit.errors.full_messages.each do |msg| %>
+        <p><%= msg %></p>
+    <% end %>
+
+<%= f.label "Animal Species" %>
+<%= f.collection_select :animal_id, Animal.all, :id, :species %>
+<br>
+<%= f.label "How Many?" %>
+<%= f.number_field :quantity_of_animal %>
+<br>
+<%= f.submit %>
+<% end %>
+
+<%= link_to "Go Back", @exhibit %>

@@ -1,0 +1,15 @@
+<h1>Welcome to the <%= @exhibit.biome %> Exhibit!</h1>
+
+<h3>This exhibit features the <%= @exhibit.animal.descriptor %> <%= @exhibit.animal.species %>. </h3>
+
+<h3><%= @exhibit.animal_count %></h3>
+
+<h4>Change Exhibit</h4>
+
+<%= button_to "Replace Animal Species", edit_exhibit_path, method: :get %>
+
+<%= button_to "Close Exhibit", @exhibit, method: :delete %>
+
+<br>
+
+<%= link_to "Go Back", @exhibit.zoo %>

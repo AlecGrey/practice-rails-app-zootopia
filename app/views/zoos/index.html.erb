@@ -1,0 +1,10 @@
+<h1>All Zoos</h1>
+
+<!-- Alphabetize Button -->
+<%= form_tag zoos_path, method: :get do %>
+    <%= submit_tag "Sort Zoo Names", name: :sort %>
+<% end %>
+
+<% @zoos.each do |zoo| %>
+    <h3><%= link_to zoo.name, zoo %></h3>
+<% end %>
