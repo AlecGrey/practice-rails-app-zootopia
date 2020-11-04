@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the fantastic Zoo Viewer, Zootopia!
 
-Things you may want to cover:
+This application features a many-to-many relationship, depicted as:
 
-* Ruby version
+## Animal Species -----< Exhibit >----- Zoo
 
-* System dependencies
+In this application you can
 
-* Configuration
+### Zoo
+- View all Zoos on an index page
+- View a specific zoo in a show page, allowing you to see the features of the exhibit
+- Add an exhibit to a zoo
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Exhibits
+- View the show page of an exhibit
+- Modify the animal species & quantity within an exhibit
+- "Close"/delete an exhibit

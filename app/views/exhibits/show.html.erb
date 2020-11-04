@@ -4,6 +4,8 @@
 
 <h3><%= @exhibit.animal_count %></h3>
 
+<h3>Species diet: <%= @exhibit.animal.diet %></h3>
+
 <h4>Change Exhibit</h4>
 
 <%= button_to "Replace Animal Species", edit_exhibit_path, method: :get %>
